@@ -50,6 +50,7 @@ if preproc_crashed ~= 1
     sel_subs = sub_names([1:5,7:10,12:18,20:end]); % subjects excluded because no T2 => sub-06 - sub-11 - sub-19  
 
     % ORGANIZING DATA FILES
+    % This function permits you to select and organize the anatomical and functional files in the required fashion.
     [AnatFiles,FuncFiles] = ORGANIZE_data_conn(bool_preproc,sel_subs);
 
     % Displaying design information
